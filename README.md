@@ -4,6 +4,10 @@
 
 This project aims to analyze a dataset of drug reviews to understand patient experiences, drug efficacy, and potential side effects. By leveraging natural language processing (NLP) techniques, we can extract valuable insights from unstructured text data.
 
+### Data Source
+
+Dataset zipfile is too large to be upladed in Github. You can access the zipfile in this link: <https://www.kaggle.com/datasets/jessicali9530/kuc-hackathon-winter-2018>
+
 ### Technologies Used
 
   * Google Colab
