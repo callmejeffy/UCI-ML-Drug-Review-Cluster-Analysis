@@ -37,9 +37,15 @@ This project aims to analyze a dataset of drug reviews to understand patient exp
   6. Data Stratification
     - Due to hardware limitation (takes long time to process every data) stratified sampling was performed to create a reduced but balanced subset of the data. A sample of 10,000 rows was created.
 
+
   7. Sentiment Analysis
       * Utilized a pre-trained `cardiffnlp/twitter-roberta-base-sentiment` model from the `transformers` library to classify the sentiment of each drug review (LABEL_0: negative, LABEL_1: neutral, LABEL_2: positive).
       * Added new columns `sentiment_label` and `sentiment_score` to the DataFrame.
+        
+     <ul>
+       <br>
+       <img width="859" height="547" alt="Sentiment Labels per Cluster" src="https://github.com/user-attachments/assets/b124679c-48d5-4007-8370-610097be9114" />
+     </ul>
 
   9. Zero Shot Classification
       * Employed a `facebook/bart-large-mnli` model for zero-shot classification to categorize reviews into specific topics such as 'Effective', 'Bad reaction', 'Life saving', etc.
@@ -57,7 +63,12 @@ This project aims to analyze a dataset of drug reviews to understand patient exp
   12. K-Means Clustering
       * Performed K-Means clustering on the PCA-transformed data to group similar drug reviews.
       * Initialized K-Means with 3 clusters and visualized the clusters.
-
+    
+      <ul>
+       <br>
+       <img width="457" height="624" alt="Kmeans" src="https://github.com/user-attachments/assets/03f5e9ce-af63-49ee-b54d-e89b463560b7" />
+      </ul>
+     
   13. Elbow Method
       * Used the elbow method to determine the optimal number of clusters for K-Means, by plotting the inertia score against the number of clusters.
 
